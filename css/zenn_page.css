@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  background: #0000;
+  border: none;
+  outline-offset: 2px;
+  transition: .25s;
+  appearance: none;
+}
+
+
+.header_container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_nav_container {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.header_nav_container ul {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.header_nav_container li {
+  margin: 0 10px;
+}
+
+.zenn_logo a {
+  display: block;
+}
+
+.zenn_logo img {
+  width: 100px;
+  height: 25px;
+}
+
+.post_bottun input {
+  display: none;
+}
+
+.search_icon svg, .bell_icon svg {
+  color: #65717b;
+}
+
+
+.search_icon svg:hover, .bell_icon svg:hover {
+  color: #2e2e2e;
+}
+
+.user_icon img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+/* main */
+main {
+  background-color: #e4edf4ff;
+}
+
+.aside_for_mobileAndTablet {
+  width: 100%;
+  border-top: 1px solid #e4edf4;
+  background-color: white;
+}
+
+.aside_container {
+  width: 90%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.zenn_user_icon {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.zenn_user_icon a {
+  color: #000;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.zenn_user_icon img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.user_icon_text {
+  padding-bottom: 20px;
+}
+.index_container {
+  display: flex;
+  height: inherit;
+}
+
+.index {
+  height: 56px;
+  border: none;
+  background-color: white;
+  color: #9ea6ac;
+  font-size: 15px;
+  outline: none;
+}
+
+.arrow_icon {
+  rotate: 180;
+}
+
+.like_button_container {
+  height: 56px;
+}
+
+.like_button_background {
+  border-radius: 50%;
+  background-color: #21568b;
+}
+
+.like_button {
+  border: none;
+  background-color: white;
+
+}
+
+.LikeButton_svg {
+  width: 23px;
+  height: 23px;
+  color: rgb(190, 24, 24);
+}
+
+/* footer */
+footer {
+  margin-top: 40px;
+  width: 100%;
+
+}
+
+.footer_container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+}
+
+.zenn_logo {
+  grid-column: 1/3;
+  margin: 10px 0;
+}
+
+.zenn_logo p {
+  color: #93a5b1;
+  font-size: 13px;
+  height: 15px;
+
+}
+
+.zenn_logo br {
+  display: none;
+}
+
+.nav_wrapper {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+
+.footer_nav_container h4 {
+  font-size: 13px;
+  display: flex;
+}
+
+.footer_nav {
+  font-size: 13px;
+}
+
+nav.footer_nav ul {
+  padding-left: 0;
+}
+
+.footer_nav li {
+  color: #393939;
+  padding: 5px 0;
+}
+
+/* tablet */
+@media screen and (min-width:577px) {
+  .post_bottun input {
+    display: block;
+    width: 93px;
+    height: 36px;
+    background-color: #3ea8ff;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+  }
+
+
+  /* footer */
+  .footer_logo br {
+    display: block;
+  }
+
+}
+
+
+/* PC */
