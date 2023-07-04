@@ -23,7 +23,12 @@ button {
   transition: .25s;
   appearance: none;
 }
-
+nav ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 .header_container {
   width: 90%;
@@ -33,22 +38,27 @@ button {
   justify-content: space-between;
 }
 
-.header_nav_container {
-  height: 60px;
+
+.header_inner_right {
+  display: flex;
 }
 
-nav ul {
-  list-style: none;
+.header_nav_container {
+  height: 60px;
+  display: flex;
 }
+
+
 
 .header_nav_container ul {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .header_nav_container li {
-  margin: 0 10px;
+  margin-left: 15px;
+  justify-content: end;
 }
 
 .zenn_logo a {
@@ -101,28 +111,31 @@ main {
 
 .zenn_user_icon {
   display: flex;
+  width: 150px;
   align-items: center;
-  text-align: justify;
 }
 
 .zenn_user_icon a {
   color: #000;
-  display: block;
+  display: flex;
   font-size: 13px;
   font-weight: bold;
-  text-decoration: none;
+  align-items: center;
 }
 
 .zenn_user_icon img {
   width: 37px;
   height: 37px;
   border-radius: 50%;
+  margin-right: 10px;
 }
 .user_icon_text {
-  padding-bottom: 20px;
+  display: block;
+  flex:2;
 }
-.index_container {
+.aside_nav_container {
   display: flex;
+  align-items: center;
   height: inherit;
 }
 
@@ -130,9 +143,13 @@ main {
   height: 56px;
   border: none;
   background-color: white;
-  color: #9ea6ac;
+  color: #385165;
   font-size: 15px;
   outline: none;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  
 }
 
 .arrow_icon {
@@ -141,11 +158,18 @@ main {
 
 .like_button_container {
   height: 56px;
+  display: flex;
+  align-items: center;
+  
 }
-
-.like_button_background {
+.like_button_outer{
+  background-color: #edf2f7;
   border-radius: 50%;
-  background-color: #21568b;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .like_button {
@@ -154,11 +178,79 @@ main {
 
 }
 
-.LikeButton_svg {
+.like_button_svg{
   width: 23px;
   height: 23px;
-  color: rgb(190, 24, 24);
+  color: gray;
+  
 }
+
+.article_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article_header svg {
+  margin-top:45px;
+  margin-bottom: 15px;
+}
+
+.article_header {
+  font-size: 12px;
+}
+
+.article_header p {
+  margin-top: 20px;
+  color:#385165;
+
+}
+
+.article_category{
+  display: flex;
+}
+.category_zenn , .category_tech{
+  display: flex;
+  align-items: center;
+  border: 1px solid #5c93bb2b;
+  border-radius: 9999px;
+  width: auto;
+  padding:0 3px;
+  font-size: 12px;
+  margin-right: 10px;
+
+}
+
+.category_zenn img , .category_tech svg{
+  width: 25px;
+  height: 25px;
+  mix-blend-mode: multiply;
+  
+}
+
+.article_detail {
+  width: 10;
+  margin-top: 50px;
+}
+
+.article_detail_wrapper, .discussion_container{
+  width: 100%;
+  background-color: white;
+}
+
+.article_detail_inner {
+  width: 90%;
+  margin:0 auto;
+}
+
+.article_detail_wrapper
+hr {
+  width: 95%;
+  margin:0 auto;
+  border-top: 1px solid #5c93bb2b;
+}
+
 
 /* footer */
 footer {
@@ -233,7 +325,17 @@ nav.footer_nav ul {
 
   }
 
+  .article_detail_wrapper, .discussion_container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+  }
 
+  .discussion_container {
+    border-top:1px solid #e4edf4;
+    margin-top: 45px;
+  }
   /* footer */
   .footer_logo br {
     display: block;
